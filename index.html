@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width">
+      <title>Encriptador de texto</title>
+      <link rel="stylesheet" href="reset.css">
+      <link rel="stylesheet" href="style.css">
+      <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+   </head>
+ 
+   <body>
+      <header>
+         <img src="imagenes/logo.png" alt="logo" id="logo">
+      </header>
+  
+      <main>
+         <section>
+              <div>
+                 <input class="input-texto" type="text" name="input-texto" placeholder="Ingrese el texto aquí">
+              </div>
+          
+              <div class="label-info">
+                <img src="imagenes/alerta.png" alt="alerta" id="imgAlerta">  
+                <label class="info" for="input-texto"> Solo letras minúsculas y sin tildes</label>
+              </div>
+              
+              <div id="botones">
+                <input class="encriptar" type="button" value="Encriptar" id="boton-encriptar">
+                <input class="desencriptar" type="button" value="Desencriptar" id="boton-desencriptar">
+              </div>
+        </section>
+        
+        <section class="cuadro" id="cuadroMensaje">
+          
+         <div id="munheco">
+           <picture>
+              <source srcset="imagenes/munheco.png" media="screen and (max-width : 400px)">
+              <img src="imagenes/munheco.png" id="imagen">
+           </picture>
+             <p class="texto1"><strong>Ningún mensaje fue encontrado</strong></p>
+             <p class="texto2">Ingrese el texto que deseas encriptar o desencriptar</p>
+         </div>
+         <div id="botonCopiar">
+           <input class="text-input-salida" type="text" id="mensaje">
+           <input class="copiar" type="button" value="Copiar" id="boton-copiar">
+         </div>
+      
+       </section>
+     </main> 
+  <footer>
+    <p>Isaí Rivas</p> 
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
